@@ -11,3 +11,75 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.wp-block-columns {
+  display: flex;
+
+}
+
+.text {
+  border: 2px solid #005a7c;
+  border-radius: 10px;
+  text-align: left;
+  padding: 2rem;
+  margin-left: 4rem;
+}
+
+.card {
+  margin-left: 4rem;
+}
+
+.card:first-child {
+  margin-left: 0;
+}
+
+.section {
+  padding-left: calc(50vw - 650px);
+  padding-right: calc(50vw - 650px);
+}
+
+.hexagon {
+  text-align: center;
+  width: 100%;
+  height: 0;
+  padding-bottom: 90.6666%;
+  filter: drop-shadow(0 0 1px #ff6d22) drop-shadow(0 0 1px #ff6d22) drop-shadow(0 0 0 #ff6d22) drop-shadow(0 0 0 #ff6d22);
+  position: relative;
+  transition: all .3s;
+  margin: 0;
+  background: url(https://www.apiture.com/wp-content/themes/Apiture/images/Mask-Hexagon-Vertical.svg) no-repeat center;
+  background-size: contain;
+
+}
+
+.hexagon-container {
+    width: 160px;
+    margin: auto;
+}
+
+.hexagon-content {
+  position: absolute;
+    left: 1rem;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text .body-text {
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; /** set this to be a prop on the bodyText atomic component **/
+  display: -webkit-box;
+}
+
+.terms {
+  font-size: .88rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #005a7c;
+    margin-bottom: 1rem;
+}
