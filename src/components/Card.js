@@ -1,4 +1,5 @@
 import React from "react";
+import './Card.css';
 // I can also add this component into Knapsack on a branch for a full demo of the prototyping abilities and my Knapsack knowledge 
 //headings (h1,h2, etc) would be an atomic component with props for styling and hierarchy to allow for most flexibility in styling while still being accessible hierarchically
 

@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import Card from "./components/Card";
 
 function App() {
@@ -27,11 +25,11 @@ function App() {
       />
       <Card
         variant="icon" 
-        image="https://www.apiture.com/wp-content/uploads/2022/01/Apiture_Purchased-Icon-Set_Processing-BW-v4-MergedShapes_Original-Icons-Team.svg"
-        title="Lorem Ipsum"
+        image="https://www.svgrepo.com/show/476043/cat.svg"
+        title="See our API docs"
         tag=""
         bodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada ante et sem dictum interdum vitae sed felis. Curabitur a est libero. Praesent finibus in tortor vel volutpat. Nullam euismod luctus laoreet. Phasellus vehicula facilisis tempus. Donec id ligula eu lacus vulputate mollis ut eu nunc. Phasellus suscipit eget ante pellentesque condimentum. Sed ligula leo, placerat commodo mi eu, imperdiet eleifend lorem. Fusce dignissim neque vitae malesuada iaculis."
-        linkUrl="#"
+        linkUrl="https://dx.apiture.com/docs/api/getting-started/"
         linkText="Learn More"
       />
     </div>
@@ -47,15 +45,15 @@ function App() {
         linkText="Learn More" // has arrow icon, but text for screen readers
       />
       <Card
-        variant="text" // this is for cards that do not have a visual component, so great for links to blogs of whitepapers 
+        variant="text" 
         title="Gain the Upper Hand Against Fraud with a Proactive Approach"
         tag="FRAUD PREVENTION"
         bodyText="Chris Babcock, CEO of Apiture, a leading digital banking solutions provider, has been named an Innovator in the Wilmington Business Journal’s 2023 WilmingtonBiz Top 100...." 
         linkUrl="https://www.apiture.com/resources/blog/gain-the-upper-hand-against-fraud-with-a-proactive-approach/"
-        linkText="Learn More" // has arrow icon, but text for screen readers
+        linkText="Learn More"
       />
       <Card
-        variant="text" // this is for cards that do not have a visual component, so great for links to blogs of whitepapers 
+        variant="text" 
         title="Lorem Ipsum Dolor Sit Amet Consectetur"
         tag="Sample Tag"
         bodyText="Nullam malesuada ante et sem dictum interdum vitae sed felis. Curabitur a est libero. Praesent finibus in tortor vel volutpat. Nullam euismod luctus laoreet. Phasellus vehicula facilisis tempus. Donec id ligula eu lacus vulputate mollis ut eu nunc. Phasellus suscipit eget ante pellentesque condimentum. Sed ligula leo, placerat commodo mi eu, imperdiet eleifend lorem. Fusce dignissim neque vitae malesuada iaculis." //ok, do the elipses programatically to make it look like WP
