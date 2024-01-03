@@ -1,41 +1,26 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.wp-block-columns {
-  display: flex;
-
-}
-
-.text {
-  border: 2px solid #005a7c;
-  border-radius: 10px;
-  text-align: left;
-  padding: 2rem;
-  margin-left: 4rem;
-}
-
 .card {
   margin-left: 4rem;
+  width: 33%;
+  position: relative;
 }
 
 .card:first-child {
   margin-left: 0;
 }
 
-.section {
-  padding-left: calc(50vw - 650px);
-  padding-right: calc(50vw - 650px);
+.card--text {
+  border: 2px solid #005a7c;
+  border-radius: 10px;
+  text-align: left;
+  padding: 2rem;
+  display: flex;
+  align-content: space-between;
+  flex-direction: column;
+
+}
+
+.card--icon {
+  text-align: center;
 }
 
 .hexagon {
@@ -49,26 +34,26 @@ code {
   margin: 0;
   background: url(https://www.apiture.com/wp-content/themes/Apiture/images/Mask-Hexagon-Vertical.svg) no-repeat center;
   background-size: contain;
-
 }
 
 .hexagon-container {
-    width: 160px;
+    width: 160px; /** fixed width for image size, normally would not use px **/
     margin: auto;
 }
 
 .hexagon-content {
   position: absolute;
-    left: 1rem;
-    top: 1rem;
-    right: 1rem;
-    bottom: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  left: 1rem;
+  top: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: contrast(0.08) sepia(1) saturate(6.5);
 }
 
-.text .body-text {
+.card--text .body-text {
   width: 100%;
   overflow: hidden;
   -webkit-box-orient: vertical;
@@ -77,9 +62,45 @@ code {
 }
 
 .terms {
-  font-size: .88rem;
+  font-size: .88em;
     font-weight: 900;
     text-transform: uppercase;
     color: #005a7c;
     margin-bottom: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: end;
+  align-self: flex-end;
+
+}
+
+.card--icon footer{
+  justify-content: center;
+}
+
+.linkButton {
+  border-radius: 3rem;
+  color: #fff;
+  padding: 1em 1.5em;
+  font: bold .7rem/1 Montserrat,sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+}
+
+.linkButton:hover {
+  transform: scale(1.05, 1.05); /** might want to add something to this hover state? **/
+}
+
+.linkButton--primary {
+  background-color: #005a7c;
+  align-content: center;
+  display: flex;
+}
+
+.linkButton--secondary {
+  background-color:  #ff6d22; /** Apiture brand color orange design token **/
+  float: right;
 }
