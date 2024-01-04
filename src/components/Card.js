@@ -1,9 +1,9 @@
+//Card component JSX 
+// with two variations: Icon and Text, but could be easily extended to include more variations
+// Ideally this would contain atomic components for headings (with props for styling and hierarchy to allow for most flexibility in styling while still being accessible) and links
+
 import React from "react";
 import './Card.css';
-// I can also add this component into Knapsack on a branch for a full demo of the prototyping abilities and my Knapsack knowledge 
-//headings (h1,h2, etc) would be an atomic component with props for styling and hierarchy to allow for most flexibility in styling while still being accessible hierarchically
-
-// TODO: Some manner of event handling, maybe a note saying you're being directed to an outside page? 
 
 function Card(props) {
 
@@ -15,7 +15,7 @@ function Card(props) {
           {props.variant==="icon" && props.image && <div className="hexagon-container">
             <figure className="hexagon">
               <span className="hexagon-content">
-                <img src={props.image} width="80px"/>
+                <img src={props.image} width="80px" alt=""/>
               </span>
             </figure>
           </div> }
@@ -26,7 +26,6 @@ function Card(props) {
           </footer> 
         </article>
        </div>
-      
     );
   }
   

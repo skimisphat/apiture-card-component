@@ -1,3 +1,7 @@
+/** Card Component Styles
+Based off styling from apiture.com
+**/
+
 .card {
   margin-left: 4rem;
   width: 33%;
@@ -16,13 +20,13 @@
   display: flex;
   align-content: space-between;
   flex-direction: column;
-
 }
 
 .card--icon {
   text-align: center;
 }
 
+/** Totally snagged this CSS from your existing stylesheet and learned more about the filter property **/
 .hexagon {
   text-align: center;
   width: 100%;
@@ -62,14 +66,14 @@
 }
 
 .terms {
-  font-size: .88em;
+  font-size: .88rem;
     font-weight: 900;
     text-transform: uppercase;
     color: #005a7c;
     margin-bottom: 1rem;
 }
 
-footer {
+footer { /** I'd never target an HTML5 element directly like this in a shared codebase **/
   display: flex;
   justify-content: flex-end;
 }
@@ -81,7 +85,7 @@ footer {
 .linkButton {
   border-radius: 3rem;
   color: #fff;
-  padding: 1em 1.5em;
+  padding: 1rem 1.5rem;
   font: bold .7rem/1 Montserrat,sans-serif;
   text-transform: uppercase;
   text-decoration: none;
@@ -89,7 +93,7 @@ footer {
 }
 
 .linkButton:hover {
-  transform: scale(1.05, 1.05); /** might want to add something to this hover state? **/
+  transform: scale(1.05, 1.05); /** might want to add something to this hover state as it's subtle, but does meet the POUR criteria for accessibility **/
 }
 
 .linkButton--primary {
