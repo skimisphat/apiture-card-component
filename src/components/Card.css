@@ -3,13 +3,14 @@ Based off styling from apiture.com
 **/
 
 .card {
-  margin-left: 4rem;
-  width: 33%;
   position: relative;
+  height: 100%;
+  display: flex;
 }
 
-.card:first-child {
-  margin-left: 0;
+.card--text, .card--icon {
+  display: flex;
+  flex-direction: column;
 }
 
 .card--text {
@@ -17,16 +18,13 @@ Based off styling from apiture.com
   border-radius: 10px;
   text-align: left;
   padding: 2rem;
-  display: flex;
-  align-content: space-between;
-  flex-direction: column;
 }
 
 .card--icon {
   text-align: center;
 }
 
-/** Totally snagged this CSS from your existing stylesheet and learned more about the filter property **/
+/** Totally snagged this CSS from the existing stylesheet and learned more about the filter property **/
 .hexagon {
   text-align: center;
   width: 100%;
@@ -61,25 +59,22 @@ Based off styling from apiture.com
   width: 100%;
   overflow: hidden;
   -webkit-box-orient: vertical;
+  line-clamp: 4; /** set this to be a prop on the bodyText atomic component **/
   -webkit-line-clamp: 4; /** set this to be a prop on the bodyText atomic component **/
   display: -webkit-box;
 }
 
 .terms {
   font-size: .88rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: #005a7c;
-    margin-bottom: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #005a7c;
+  margin-bottom: 1rem;
 }
 
-footer { /** I'd never target an HTML5 element directly like this in a shared codebase **/
-  display: flex;
-  justify-content: flex-end;
-}
-
-.card--icon footer{
-  justify-content: center;
+.card__footer { 
+  flex: 1;
+  align-content: flex-end;
 }
 
 .linkButton {
@@ -88,8 +83,8 @@ footer { /** I'd never target an HTML5 element directly like this in a shared co
   padding: 1rem 1.5rem;
   font: bold .7rem/1 Montserrat,sans-serif;
   text-transform: uppercase;
-  text-decoration: none;
-  display: flex;
+  text-decoration: none; 
+  display: inline-block;
 }
 
 .linkButton:hover {
@@ -99,7 +94,6 @@ footer { /** I'd never target an HTML5 element directly like this in a shared co
 .linkButton--primary {
   background-color: #005a7c;
   align-content: center;
-  display: flex;
 }
 
 .linkButton--secondary {

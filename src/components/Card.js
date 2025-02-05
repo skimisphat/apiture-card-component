@@ -21,7 +21,7 @@ function Card(props) {
           </div> }
           <h2>{props.title}</h2>
           <p className="body-text">{props.bodyText}</p>
-          <footer> 
+          <footer className="card__footer"> 
             <a className={buttonVariantClasses} href={props.linkUrl}>{props.linkText}</a>
           </footer> 
         </article>
