@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/apiture-card-component/static/css/main.3600c8e8.css",
-    "main.js": "/apiture-card-component/static/js/main.ffa7c1c2.js",
-    "static/js/787.d461ad1c.chunk.js": "/apiture-card-component/static/js/787.d461ad1c.chunk.js",
+    "main.css": "/apiture-card-component/static/css/main.5fd49d4e.css",
+    "main.js": "/apiture-card-component/static/js/main.ef4fb781.js",
     "index.html": "/apiture-card-component/index.html",
-    "main.3600c8e8.css.map": "/apiture-card-component/static/css/main.3600c8e8.css.map",
-    "main.ffa7c1c2.js.map": "/apiture-card-component/static/js/main.ffa7c1c2.js.map",
-    "787.d461ad1c.chunk.js.map": "/apiture-card-component/static/js/787.d461ad1c.chunk.js.map"
+    "main.5fd49d4e.css.map": "/apiture-card-component/static/css/main.5fd49d4e.css.map",
+    "main.ef4fb781.js.map": "/apiture-card-component/static/js/main.ef4fb781.js.map"
   },
   "entrypoints": [
-    "static/css/main.3600c8e8.css",
-    "static/js/main.ffa7c1c2.js"
+    "static/css/main.5fd49d4e.css",
+    "static/js/main.ef4fb781.js"
   ]
 }
